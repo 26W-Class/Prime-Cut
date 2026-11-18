@@ -1,72 +1,404 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h1>Booking Form</h1>
-        <p>Please enter your details and secure your slot</p>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Chair | Crown &amp; Blade Barber Lounge</title>
+    <!-- Font Awesome 6 (Pure CSS Icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="layout.css" />
+  </head>
+  <body>
     <main>
-        <form action="/submit">
-            <label for="option" class="option">
-                <input type="radio" required value="classic-cut" name="service">
-                <span>Classic Cut <small>45 min &middot; KES 800</small></span>
-            </label>
-            <label for="option" class="option">
-                <input type="radio" required value="skin-fade" name="service">
-                <span>Skin Fade <small>50 min &middot; KES 1,000</small></span>
-            </label><br>
-            <label for="phone">Phone (Mpesa)</label>
-            <input type="tel" id="phone" name="phone" placeholder="Please enter your number..."><br>
-            <label class="slot">
-                <input type="radio" name="time" value="09:30"><span>9:30</span>
-            </label>
-            <label class="slot">
-                <input type="radio" name="time" value="10:00" disabled><span>10:00</span>
-            </label>
-            <br>
-            <label for="name">Name:</label>
-            <input type="text" placeholder="Enter your name" required><br> <br>
-            <label for="message">Message:</label>
-            <textarea name="message" id="name">
-                Enter your message ...
-            </textarea>
-            <br><br>
-            <label for="email">Email:</label>
-            <input type="email"><br><br>
-            <label for="password">Password:</label>
-            <input type="password"><br>
-            <label for="category">Category</label>
-            <select name="category" id="category">
-                <option value="">-- Select an Option --</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-                <option value="option4">Option 4</option>
-            </select> <br>
-            <label for="preferences">Preferences</label>
-            <label for="notifications">
-                <input type="checkbox" name="preferences" value="notifications">Notifications
-            </label>
-            <label for="newsletter">
-                <input type="checkbox" name="newsletter" value="newsletter">Newsletter
-            </label>
-            <label for="updates">
-                <input type="checkbox" name="updates" value="updates">Updates
-            </label>
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date"><br>
-            <label for="color">Theme Color:</label>
-            <input type="color" id="color" name="color" value="red">
-            <br>
-            <label for="submit">Submit
-                <input type="submit" id="submit" name="submit">
-            </label>
-        </form>
+      <section class="container">
+        <!-- Header / Hero -->
+        <header class="hero">
+          <div class="brand-group">
+            <span class="brand-badge">RESERVATIONS</span>
+            <h1>Crown &amp; Blade</h1>
+            <p>
+              Reserve Your Chair, Plan Your Visit or Inquire About Group
+              Bookings
+            </p>
+          </div>
+          <a href="#booking-form" class="btn-primary">Reserve Now</a>
+        </header>
+
+        <!-- Sidebar Navigation -->
+        <aside class="aside">
+          <nav aria-label="Primary Navigation">
+            <p class="nav-label">Menu</p>
+            <ul>
+              <li>
+                <a href="index.html"
+                  ><i class="fa-solid fa-house"></i> Home</a
+                >
+              </li>
+              <li>
+                <a href="team.html"
+                  ><i class="fa-solid fa-users"></i> Our Team</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-scissors"></i> Services</a
+                >
+              </li>
+              <li>
+                <a href="about.html"
+                  ><i class="fa-solid fa-award"></i> About Us</a
+                >
+              </li>
+              <li>
+                <a href="reviews.html"
+                  ><i class="fa-solid fa-star"></i> Reviews</a
+                >
+              </li>
+              <li>
+                <a href="book.html" class="active"
+                  ><i class="fa-solid fa-calendar-check"></i> Book a Chair</a
+                >
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><i class="fa-solid fa-envelope"></i> Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="sidebar-hours">
+            <p class="nav-label">Lounge Hours</p>
+            <p>Tue – Fri: 9:00 AM – 8:00 PM</p>
+            <p>Sat: 8:30 AM – 7:00 PM</p>
+            <p>Sun – Mon: Closed</p>
+          </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <section class="main-area">
+          <div class="showcase-banner">
+            <span class="eyebrow">Instant Reservation</span>
+            <h2>Secure Your Appointment at Riverside Square</h2>
+            <p>
+              Choose your preferred grooming service, select an available time
+              slot, and provide your M-Pesa contact number for instant
+              confirmation. Walk-ins are welcome when a chair is open, though
+              advance booking is recommended for Fridays and Saturdays.
+            </p>
+          </div>
+
+          <!-- Booking Form Block -->
+          <div id="booking-form" class="content-block">
+            <div class="section-heading">
+              <h3>Online Booking Portal</h3>
+              <p>All appointments include our signature hot eucalyptus towel and espresso service.</p>
+            </div>
+
+            <div class="contact-grid">
+              <form class="booking-form" action="book.html" method="get">
+                <!-- Services Selection -->
+                <div class="form-row">
+                  <label>Select Grooming Service</label>
+                  <div class="radio-group-vertical">
+                    <label class="option">
+                      <input type="radio" required value="sovereign-cut" name="service">
+                      <span>The Sovereign Cut <small>45 min &middot; KES 2,500</small></span>
+                    </label>
+                    <label class="option">
+                      <input type="radio" required value="skin-fade" name="service">
+                      <span>Skin Fade &amp; Razor Lineup <small>50 min &middot; KES 2,800</small></span>
+                    </label>
+                    <label class="option">
+                      <input type="radio" required value="shave" name="service">
+                      <span>Royal Straight-Razor Shave <small>40 min &middot; KES 2,200</small></span>
+                    </label>
+                    <label class="option">
+                      <input type="radio" required value="beard" name="service">
+                      <span>Beard Sculpt &amp; Conditioning <small>30 min &middot; KES 1,800</small></span>
+                    </label>
+                    <label class="option">
+                      <input type="radio" required value="executive" name="service">
+                      <span>Crown Executive Package <small>75 min &middot; KES 4,500</small></span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Personal Info -->
+                <div class="form-row">
+                  <label for="client-name">Full Name</label>
+                  <input type="text" id="client-name" name="name" placeholder="Enter your full name" required />
+                </div>
+
+                <div class="form-row">
+                  <label for="phone">Phone Number (M-Pesa STK Push)</label>
+                  <input type="tel" id="phone" name="phone" placeholder="e.g. 0712345678" required />
+                </div>
+
+                <div class="form-row">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="david@example.com" required />
+                </div>
+
+                <!-- Date & Barber -->
+                <div class="form-two-col">
+                  <div class="form-row">
+                    <label for="date">Appointment Date</label>
+                    <input type="date" id="date" name="date" required />
+                  </div>
+
+                  <div class="form-row">
+                    <label for="barber-select">Preferred Barber</label>
+                    <select id="barber-select" name="barber">
+                      <option value="any">First Available Master Barber</option>
+                      <option value="marcus">Marcus Vance — Master Barber</option>
+                      <option value="daniel">Daniel Ochieng — Senior Fade Specialist</option>
+                      <option value="elias">Elias Thorne — Beard &amp; Razor Artist</option>
+                      <option value="tariq">Tariq Hassan — Classic Stylist</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Time Slots -->
+                <div class="form-row">
+                  <label>Select Time Slot</label>
+                  <div class="slots-grid">
+                    <label class="slot">
+                      <input type="radio" name="time" value="09:00" required><span>9:00 AM</span>
+                    </label>
+                    <label class="slot">
+                      <input type="radio" name="time" value="10:30"><span>10:30 AM</span>
+                    </label>
+                    <label class="slot">
+                      <input type="radio" name="time" value="12:00"><span>12:00 PM</span>
+                    </label>
+                    <label class="slot">
+                      <input type="radio" name="time" value="14:00"><span>2:00 PM</span>
+                    </label>
+                    <label class="slot">
+                      <input type="radio" name="time" value="15:30"><span>3:30 PM</span>
+                    </label>
+                    <label class="slot">
+                      <input type="radio" name="time" value="17:00" disabled><span>5:00 PM (Booked)</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Notifications -->
+                <div class="form-row">
+                  <label>Concierge Notifications</label>
+                  <div class="checkbox-group">
+                    <label><input type="checkbox" name="preferences" value="sms" checked> SMS Reminder</label>
+                    <label><input type="checkbox" name="preferences" value="whatsapp" checked> WhatsApp Confirmation</label>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <label for="message">Special Requests / Notes</label>
+                  <textarea name="message" id="message" rows="3" placeholder="Enter any specific styling notes or beverage preferences..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary full-width">Confirm &amp; Pay via M-Pesa</button>
+              </form>
+
+              <!-- Booking Info Card -->
+              <div class="location-card">
+                <img
+                  src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80"
+                  alt="Crown and Blade Lounge interior"
+                  class="card-img"
+                />
+                <h4>Booking Policy</h4>
+                <p>
+                  A confirmation prompt will be sent to your M-Pesa phone number upon submission. Please arrive 5 minutes prior to your slot.
+                </p>
+
+                <h4>Guest Policies</h4>
+                <ul class="amenities-list">
+                  <li>15-minute grace period for late arrivals</li>
+                  <li>24-hour notice appreciated for rescheduling</li>
+                </ul>
+
+                <h4>Need Help Booking?</h4>
+                <p>
+                  Call +254 712 345 678 or visit our
+                  <a href="contact.html">Contact page</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Professional Multi-Column Footer -->
+        <footer class="footer">
+          <div class="footer-grid">
+            <!-- Column 1: Brand & Socials -->
+            <div class="footer-col">
+              <div class="footer-brand">
+                <i class="fa-solid fa-scissors"></i>
+                <span>Crown &amp; Blade</span>
+              </div>
+              <p class="footer-desc">
+                A bespoke grooming sanctuary dedicated to precision cuts,
+                classic straight-razor shaves, and unhurried luxury in the heart
+                of Nairobi.
+              </p>
+              <div class="social-links" aria-label="Social Media Links">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://x.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="X (Twitter)"
+                >
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a
+                  href="https://wa.me/254712345678"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp Front"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Column 2: Quick Navigation -->
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul class="footer-links">
+                <li>
+                  <a href="index.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Home Lounge</a
+                  >
+                </li>
+                <li>
+                  <a href="team.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Master Barbers</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Grooming Menu</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Our Heritage</a
+                  >
+                </li>
+                <li>
+                  <a href="reviews.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Client Reviews</a
+                  >
+                </li>
+                <li>
+                  <a href="book.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Book a Chair</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 3: Signature Services -->
+            <div class="footer-col">
+              <h4>Popular Rituals</h4>
+              <ul class="footer-links">
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-angle-right"></i> The Sovereign
+                    Cut</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-angle-right"></i> Royal Hot-Towel
+                    Shave</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-angle-right"></i> Beard Sculpt &amp;
+                    Oil</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-angle-right"></i> Crown Executive
+                    Package</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-angle-right"></i> Groom &amp; Bridal
+                    Suite</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 4: Contact & Hours -->
+            <div class="footer-col">
+              <h4>Visit &amp; Contact</h4>
+              <ul class="footer-contact">
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span
+                    >4th Floor, Riverside Square, Riverside Drive, Nairobi</span
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <span>+254 712 345 678</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>helpdesk@crownandblade.co.ke</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-clock"></i>
+                  <span>Tue–Fri: 9 AM – 8 PM &bull; Sat: 8:30 AM – 7 PM</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Bottom Copyright Bar -->
+          <div class="footer-bottom">
+            <p>
+              &copy; 2026 Crown &amp; Blade Barber Lounge. All rights reserved.
+            </p>
+            <p>
+              Built with <i class="fa-solid fa-heart"></i> by
+              <strong>Zindua</strong>
+            </p>
+          </div>
+        </footer>
+      </section>
     </main>
-</body>
+  </body>
 </html>

@@ -3,93 +3,469 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Great Cut | Book Your Next Haircut</title>
+    <title>Crown &amp; Blade | Bespoke Barber Lounge</title>
+    <!-- Font Awesome 6 (Pure CSS Icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="layout.css" />
   </head>
   <body>
-    <h1>Great Cut</h1>
-    <p id="para1">
-      <b>lorem ipsum dolor sit amet, consectetur adipiscing elit.</b><br />
-      Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
-      <strong
-        >Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat.</strong
-      ><br />
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-      dolore eu fugiat nulla pariatur. <br />Excepteur sint occaecat cupidatat
-      non proident, sunt in culpa qui officia deserunt mollit anim id est
-      laborum.
-    </p> <hr>
-    <a href="https://app.zinduaschool.com"><i>Learn More</i></a> <br />
-    <br />
-    <a href="https://google.com">Learn More</a>
-    <p>This is a <span>span tag</span>in a paragragh</p>
-    <p>
-        My Bonnie lies over the ocean.
+    <main>
+      <section class="container">
+        <!-- Header / Hero -->
+        <header class="hero">
+          <div class="brand-group">
+            <span class="brand-badge">EST. 2018 &bull; NAIROBI</span>
+            <h1>Crown &amp; Blade</h1>
+            <p>Precision Cuts, Hot Towel Shaves &amp; Classic Grooming</p>
+          </div>
+          <a href="book.html" class="btn-primary">Book a Chair</a>
+        </header>
 
-        My Bonnie lies over the sea.
+        <!-- Sidebar Navigation -->
+        <aside class="aside">
+          <nav aria-label="Primary Navigation">
+            <p class="nav-label">Menu</p>
+            <ul>
+              <li>
+                <a href="index.html" class="active"
+                  ><i class="fa-solid fa-house"></i> Home</a
+                >
+              </li>
+              <li>
+                <a href="team.html"
+                  ><i class="fa-solid fa-users"></i> Our Team</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-scissors"></i> Services</a
+                >
+              </li>
+              <li>
+                <a href="about.html"
+                  ><i class="fa-solid fa-award"></i> About Us</a
+                >
+              </li>
+              <li>
+                <a href="reviews.html"
+                  ><i class="fa-solid fa-star"></i> Reviews</a
+                >
+              </li>
+              <li>
+                <a href="book.html"
+                  ><i class="fa-solid fa-calendar-check"></i> Book a Chair</a
+                >
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><i class="fa-solid fa-envelope"></i> Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
 
-        My Bonnie lies over the ocean.
+          <div class="sidebar-hours">
+            <p class="nav-label">Lounge Hours</p>
+            <p>Tue – Fri: 9:00 AM – 8:00 PM</p>
+            <p>Sat: 8:30 AM – 7:00 PM</p>
+            <p>Sun – Mon: Closed</p>
+          </div>
+        </aside>
 
-        Oh, bring back my Bonnie to me.
-    </p>
-    <pre>
-        My Bonnie lies over the ocean.
+        <!-- Main Content Area -->
+        <section class="main-area">
+          <!-- Hero Showcase Banner -->
+          <div class="showcase-banner banner-home">
+            <span class="eyebrow">The Art of Modern Grooming</span>
+            <h2>Sharp Lines. Timeless Craft. Unhurried Luxury.</h2>
+            <p>
+              Step into a refined sanctuary where traditional barbering meets
+              contemporary precision. Every appointment includes a personalized
+              consultation, hot eucalyptus towel treatment, and complimentary
+              espresso or aged whiskey.
+            </p>
+            <div class="banner-actions">
+              <a href="team.html" class="btn-primary">Meet Our Barbers</a>
+              <a href="services.html" class="btn-secondary">Explore Services</a>
+            </div>
+          </div>
 
-        My Bonnie lies over the sea.
+          <!-- Signature Services Grid -->
+          <div id="services" class="content-block">
+            <div class="section-heading">
+              <h3>Signature Grooming Menu</h3>
+              <p>
+                Tailored services performed with Japanese steel shears and
+                single-blade straight razors.
+              </p>
+            </div>
 
-        My Bonnie lies over the ocean.
+            <div class="cards-grid">
+              <article class="card">
+                <img
+                  src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80"
+                  alt="Master barber performing a precision scissor cut"
+                  class="card-img"
+                />
+                <div class="card-top">
+                  <h4>The Sovereign Cut</h4>
+                  <span class="price">KES 2,500</span>
+                </div>
+                <p>
+                  Bespoke scissor and clipper haircut, precision neck taper,
+                  invigorating wash, and styled finish.
+                </p>
+                <span class="duration">45 Mins</span>
+              </article>
 
-        Oh, bring back my Bonnie to me.
-    </pre>
-    <p>The chemical formula for water is H<sub>2</sub>O</p>
-    <p>4<sup>2</sup> = 16</p>
-    <p>The price was <del><small>Ksh2000.00</small></del>, now it's <mark><b>Ksh1500.00</b></mark></p>
-    <p>This is a <span>span tag</span>in a paragragh</p>
-    <p>
-        My Bonnie lies over the ocean.
+              <article class="card">
+                <img
+                  src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
+                  alt="Traditional straight-razor hot towel shave"
+                  class="card-img"
+                />
+                <div class="card-top">
+                  <h4>Royal Straight-Razor Shave</h4>
+                  <span class="price">KES 2,200</span>
+                </div>
+                <p>
+                  Three steaming essential-oil towels, rich sandalwood lather,
+                  two-pass straight razor shave, and cold stone balm.
+                </p>
+                <span class="duration">40 Mins</span>
+              </article>
 
-        My Bonnie lies over the sea.
+              <article class="card">
+                <img
+                  src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80"
+                  alt="Precision beard sculpting and oil conditioning"
+                  class="card-img"
+                />
+                <div class="card-top">
+                  <h4>Beard Sculpt &amp; Conditioning</h4>
+                  <span class="price">KES 1,800</span>
+                </div>
+                <p>
+                  Architectural beard shaping, razor cheek-line detailing, and
+                  warm cedarwood beard oil infusion.
+                </p>
+                <span class="duration">30 Mins</span>
+              </article>
 
-        My Bonnie lies over the ocean.
+              <article class="card">
+                <img
+                  src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80"
+                  alt="Luxury leather barber chairs inside Crown and Blade lounge"
+                  class="card-img"
+                />
+                <div class="card-top">
+                  <h4>The Crown Executive Package</h4>
+                  <span class="price">KES 4,500</span>
+                </div>
+                <p>
+                  Our flagship Sovereign Cut paired with a Royal Hot-Towel Shave
+                  or Beard Sculpt and scalp massage.
+                </p>
+                <span class="duration">75 Mins</span>
+              </article>
+            </div>
+          </div>
 
-        Oh, bring back my Bonnie to me.
-    </p>
-    <pre>
-        My Bonnie lies over the ocean.
+          <!-- About Us Section -->
+          <div id="about" class="content-block split-panel">
+            <div>
+              <span class="eyebrow">Our Heritage</span>
+              <h3>More Than a Haircut — A Ritual</h3>
+              <p>
+                Founded on the belief that grooming should never feel rushed,
+                Crown &amp; Blade brings back the camaraderie and craftsmanship
+                of classic neighborhood barbershops in an elevated, minimalist
+                setting.
+              </p>
+            </div>
+            <div class="stats-box">
+              <div class="stat">
+                <strong>8+</strong>
+                <span>Years of Craft</span>
+              </div>
+              <div class="stat">
+                <strong>4.9★</strong>
+                <span>Client Rating</span>
+              </div>
+              <div class="stat">
+                <strong>100%</strong>
+                <span>Bespoke Consultations</span>
+              </div>
+            </div>
+          </div>
 
-        My Bonnie lies over the sea.
+          <!-- Pure HTML/CSS Appointment Request & Contact Section -->
+          <div id="booking" class="content-block">
+            <div class="section-heading">
+              <h3>Reserve Your Chair &amp; Visit Us</h3>
+              <p>
+                Walk-ins are welcome based on availability; advance booking is
+                recommended.
+              </p>
+            </div>
 
-        My Bonnie lies over the ocean.
+            <div id="contact" class="contact-grid">
+              <form class="booking-form" action="book.html" method="get">
+                <div class="form-row">
+                  <label for="client-name">Full Name</label>
+                  <input
+                    type="text"
+                    id="client-name"
+                    name="name"
+                    placeholder="e.g. David Kamau"
+                    required
+                  />
+                </div>
 
-        Oh, bring back my Bonnie to me.
-    </pre>
-    <p>The chemical formula for water is H<sub>2</sub>O</p>
-    <p>4<sup>2</sup> = 16</p>
-    <p>The price was <del><small>Ksh2000.00</small></del>, now it's <mark><b>Ksh1500.00</b></mark></p>
-    <p>This is a <span>span tag</span>in a paragragh</p>
-    <p>
-        My Bonnie lies over the ocean.
+                <div class="form-row">
+                  <label for="client-phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="client-phone"
+                    name="phone"
+                    placeholder="+254 700 000 000"
+                    required
+                  />
+                </div>
 
-        My Bonnie lies over the sea.
+                <div class="form-row">
+                  <label for="barber-select">Preferred Barber</label>
+                  <select id="barber-select" name="barber">
+                    <option value="any">First Available Master Barber</option>
+                    <option value="marcus">Marcus Vance — Master Barber</option>
+                    <option value="daniel">
+                      Daniel Ochieng — Senior Fade Specialist
+                    </option>
+                    <option value="elias">
+                      Elias Thorne — Beard &amp; Razor Artist
+                    </option>
+                    <option value="tariq">
+                      Tariq Hassan — Classic Scissor Stylist
+                    </option>
+                  </select>
+                </div>
 
-        My Bonnie lies over the ocean.
+                <div class="form-row">
+                  <label for="service-select">Service</label>
+                  <select id="service-select" name="service">
+                    <option value="sovereign">
+                      The Sovereign Cut (KES 2,500)
+                    </option>
+                    <option value="shave">
+                      Royal Straight-Razor Shave (KES 2,200)
+                    </option>
+                    <option value="beard">
+                      Beard Sculpt &amp; Conditioning (KES 1,800)
+                    </option>
+                    <option value="executive">
+                      The Crown Executive Package (KES 4,500)
+                    </option>
+                  </select>
+                </div>
 
-        Oh, bring back my Bonnie to me.
-    </p>
-    <pre>
-        My Bonnie lies over the ocean.
+                <button type="submit" class="btn-primary full-width">
+                  Confirm Appointment Request
+                </button>
+              </form>
 
-        My Bonnie lies over the sea.
+              <div class="location-card">
+                <img
+                  src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80"
+                  alt="Crown and Blade Lounge interior seating and reception"
+                  class="card-img"
+                />
+                <h4>Lounge Location</h4>
+                <p>4th Floor, Riverside Square<br />Riverside Drive, Nairobi</p>
 
-        My Bonnie lies over the ocean.
+                <h4>Direct Line &amp; Email</h4>
+                <p>+254 712 345 678<br />helpdesk@crownandblade.co.ke</p>
 
-        Oh, bring back my Bonnie to me.
-    </pre>
-    <p>The chemical formula for water is H<sub>2</sub>O</p>
-    <p>4<sup>2</sup> = 16</p>
-    <p>The price was <del><small>Ksh2000.00</small></del>, now it's <mark><b>Ksh1500.00</b></mark></p>
-    <a href="#para1">Go to Introduction</a>
-    <a href="about.html">Learn More about Us</a>
-    <a href="contact.html">Contact Us</a>
+                <h4>Complimentary Amenities</h4>
+                <ul class="amenities-list">
+                  <li>Single-Origin Kenyan Espresso</li>
+                  <li>Hot Eucalyptus Towel Service</li>
+                  <li>Secured Basement Parking</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Professional Multi-Column Footer -->
+        <footer class="footer">
+          <div class="footer-grid">
+            <!-- Column 1: Brand & Socials -->
+            <div class="footer-col">
+              <div class="footer-brand">
+                <i class="fa-solid fa-scissors"></i>
+                <span>Crown &amp; Blade</span>
+              </div>
+              <p class="footer-desc">
+                A bespoke grooming sanctuary dedicated to precision cuts,
+                classic straight-razor shaves, and unhurried luxury in the heart
+                of Nairobi.
+              </p>
+              <div class="social-links" aria-label="Social Media Links">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://x.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="X (Twitter)"
+                >
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a
+                  href="https://wa.me/254712345678"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp Concierge"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Column 2: Quick Navigation -->
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul class="footer-links">
+                <li>
+                  <a href="index.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Home Lounge</a
+                  >
+                </li>
+                <li>
+                  <a href="team.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Master Barbers</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Grooming Menu</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Our Heritage</a
+                  >
+                </li>
+                <li>
+                  <a href="reviews.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Client Reviews</a
+                  >
+                </li>
+                <li>
+                  <a href="book.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Book a Chair</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 3: Signature Services -->
+            <div class="footer-col">
+              <h4>Popular Rituals</h4>
+              <ul class="footer-links">
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-angle-right"></i> The Sovereign
+                    Cut</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-angle-right"></i> Royal Hot-Towel
+                    Shave</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-angle-right"></i> Beard Sculpt &amp;
+                    Oil</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-angle-right"></i> Crown Executive
+                    Package</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-angle-right"></i> Groom &amp; Bridal
+                    Suite</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 4: Contact & Hours -->
+            <div class="footer-col">
+              <h4>Visit &amp; Contact</h4>
+              <ul class="footer-contact">
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span
+                    >4th Floor, Riverside Square, Riverside Drive, Nairobi</span
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <span>+254 712 345 678</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>helpdesk@crownandblade.co.ke</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-clock"></i>
+                  <span>Tue–Fri: 9 AM – 8 PM &bull; Sat: 8:30 AM – 7 PM</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Bottom Copyright Bar -->
+          <div class="footer-bottom">
+            <p>
+              &copy; 2026 Crown &amp; Blade Barber Lounge. All rights reserved.
+            </p>
+            <p>
+              Built with <i class="fa-solid fa-heart"></i> by
+              <strong>Zindua</strong>
+            </p>
+          </div>
+        </footer>
+      </section>
+    </main>
   </body>
 </html>

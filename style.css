@@ -1,0 +1,268 @@
+/* element selector */
+body {
+    color:white;
+    /* background-color: black; */
+}
+
+header {
+    background-color: grey;
+}
+
+/* universal selector */
+* {
+    padding: 5px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+}
+
+/* class selector */
+
+.btn {
+    color: antiquewhite;
+    background-color: blue;
+    padding: 8px;
+
+}
+
+/* id selector */
+/* 
+#hero-title {
+    font-size: 50px;
+    color: red;
+} */
+.hero {
+    background-image: url('/assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.hero1 {
+    background: none;
+}
+
+.grad {
+   background: linear-gradient(to right, green, yellow) ;
+}
+
+.title {
+    background: linear-gradient(to left, purple, blue);
+}
+
+.cont {
+    width: 100%;
+    height: 100px;
+}
+
+.radial-grad {
+    background: radial-gradient(
+        at 0% 50%,
+        green 30%,
+        yellow 60%,
+        magenta 20%,
+        blue 10%
+    );
+}
+
+.conic {
+    height: 100px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid gold;
+    background: conic-gradient(
+        from 45deg at 70% 20%,
+        red, orange, yellow, green, blue, violet,red
+    );
+}
+/* attribute selector */
+
+a[href] {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/* descendant selector */
+
+nav ul li {
+    list-style: none;
+}
+ul li a {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 1px black;
+}
+
+section p {
+    margin: 10px;
+    border: 1px solid green;
+}
+/* child selector */
+
+section > p {
+    color: yellow;
+}
+
+/* adjacent sibling selector */
+
+h3 + p {
+    font-style: italic;
+    color: darkgrey;
+}
+
+/* general sibling selector */
+
+/* h1 ~ p {
+    color: maroon;
+} */
+
+/* group selector */
+
+h1, h2 {
+    text-align: center;
+}
+
+/* pseudo class selectors */
+
+button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+/* pseudo element selector */
+.para::before {
+    content: "Note: ";
+}
+
+.email::after {
+    content: ": Talk to Us";
+    color: blueviolet;
+}
+/* 
+.unit-mm {
+   font-size: 5mm; 
+}
+.unit-cm {
+    font-size: 5cm;
+}
+.unit-inch {
+    font-size: 5in;
+}
+.unit-quarter {
+    font-size: 5Q;
+}
+.unit-pixel {
+    font-size: 5px;
+} */
+.unit-em {
+   font-size: 5em; 
+}
+.unit-rem {
+    font-size: 5rem;
+}
+.unit-vh {
+    font-size: 5vh;
+}
+.unit-vw {
+    font-size: 5vw;
+}
+.unit-percent {
+    font-size: 5%;
+    color: chocolate;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    border-radius: 8px;
+    background-color: #4f2323;
+    animation: changeColor 3s infinite;
+    border-style: dotted;
+}
+
+@keyframes changeColor {
+    from {
+        background-color: rgb(0,255, 255);
+    }
+    to {
+        background-color: hsl(0, 75%, 14%);
+    }
+}
+
+.border-img {
+    border: 20px  solid transparent;
+    border-image: url('assets/my-bg.jpg') 30 stretch;
+    padding: 20px;
+}
+
+/* Hexadecimal colors RRGGBB*/
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('assets/my-bg.jpg');
+}
+
+.card {
+   position: absolute; 
+   height: 60%;
+   width: 40%;
+   border: 1px solid rgba(255, 255, 255, 0.18);
+   background: rgba(89, 131, 83, 0.09);
+   border-radius: 1em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   backdrop-filter: blur(2px);
+   transition: transform 0.8s, backdrop-filter 0.5s;
+   z-index: 10;
+}
+
+.card:hover {
+    backdrop-filter: blur(14px);
+    height: 60%;
+    width: 40%;
+    transform: rotateY(180deg);
+}
+
+#logo {
+    width: 75%;
+    height: 90%;
+    border-radius: 1em;
+    position: relative;
+    display: block;
+}
+
+.txt {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color: aliceblue;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    align-items: center;
+}
+
+
+.box1 {
+    position: absolute;
+    height: 200px;
+    width: 280px;
+    background-color: #4f2323;
+    z-index: 1;
+    left: 10px;
+    top: 10px;
+}
+.box2 {
+    position: absolute;
+    height: 140px;
+    width: 220px;
+    background-color: #f0ebeb;
+    z-index: 5;
+    left: 30px;
+    top: 30px;
+}

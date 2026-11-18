@@ -1,21 +1,376 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with Great Cut for any inquiries or to book your next haircut.">
-    <title>Great Cut | Contact Us</title>
-</head>
-<body>
-    <h1>Contact Us</h1>
-    <p>
-        Have questions or want to book an appointment? Reach out to us!
-    </p>
-    <p>
-        Email: <a href="mailto:kwanusujoseph@gmail.com">Email Us</a>
-    </p>
-    <p>
-        Phone: <a href="tel:+254700000000">Call Us</a>
-    </p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Crown &amp; Blade Barber Lounge</title>
+    <!-- Font Awesome 6 (Pure CSS Icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="layout.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <!-- Header / Hero -->
+        <header class="hero">
+          <div class="brand-group">
+            <span class="brand-badge">CONTACT &amp; ENQUIRIES</span>
+            <h1>Crown &amp; Blade</h1>
+            <p>
+              Reach the Front Desk, Plan Your Visit or Enquire About Group Events
+            </p>
+          </div>
+          <a href="#contact-form" class="btn-primary">Message Us</a>
+        </header>
+
+        <!-- Sidebar Navigation -->
+        <aside class="aside">
+          <nav aria-label="Primary Navigation">
+            <p class="nav-label">Menu</p>
+            <ul>
+              <li>
+                <a href="index.html"
+                  ><i class="fa-solid fa-house"></i> Home</a
+                >
+              </li>
+              <li>
+                <a href="team.html"
+                  ><i class="fa-solid fa-users"></i> Our Team</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-scissors"></i> Services</a
+                >
+              </li>
+              <li>
+                <a href="about.html"
+                  ><i class="fa-solid fa-award"></i> About Us</a
+                >
+              </li>
+              <li>
+                <a href="reviews.html"
+                  ><i class="fa-solid fa-star"></i> Reviews</a
+                >
+              </li>
+              <li>
+                <a href="book.html"
+                  ><i class="fa-solid fa-calendar-check"></i> Book a Chair</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="active"
+                  ><i class="fa-solid fa-envelope"></i> Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="sidebar-hours">
+            <p class="nav-label">Lounge Hours</p>
+            <p>Tue – Fri: 9:00 AM – 8:00 PM</p>
+            <p>Sat: 8:30 AM – 7:00 PM</p>
+            <p>Sun – Mon: Closed</p>
+          </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <section class="main-area">
+          <div class="showcase-banner">
+            <span class="eyebrow">Get in Touch</span>
+            <h2>We're Here to Help Before, During &amp; After Your Visit</h2>
+            <p>
+              Questions about services, group events or feedback? Reach our
+              front desk by phone, WhatsApp or email, or send us a message
+              below. Ready for a chair? Head to our booking page.
+            </p>
+            <div class="banner-actions">
+              <a href="book.html" class="btn-primary">Book a Chair</a>
+            </div>
+          </div>
+
+          <!-- Enquiry Form & Contact Details -->
+          <div id="contact-form" class="content-block">
+            <div class="section-heading">
+              <h3>Send Us a Message</h3>
+              <p>Our team replies to all enquiries within one business day.</p>
+            </div>
+
+            <div class="contact-grid">
+              <form class="booking-form" action="contact.html" method="get">
+                <div class="form-row">
+                  <label for="full-name">Full Name</label>
+                  <input type="text" id="full-name" name="name" placeholder="e.g. David Kamau" required />
+                </div>
+
+                <div class="form-row">
+                  <label for="email-address">Email Address</label>
+                  <input type="email" id="email-address" name="email" placeholder="david@example.com" required />
+                </div>
+
+                <div class="form-row">
+                  <label for="phone-number">Phone / WhatsApp Number</label>
+                  <input type="tel" id="phone-number" name="phone" placeholder="+254 700 000 000" />
+                </div>
+
+                <div class="form-row">
+                  <label for="topic">Who Would You Like to Reach?</label>
+                  <select id="topic" name="topic">
+                    <option value="front-desk">Front Desk — General Enquiry</option>
+                    <option value="events">Private Events &amp; Groom Parties</option>
+                    <option value="feedback">Feedback &amp; Complaints</option>
+                    <option value="careers">Careers — Join Our Team</option>
+                  </select>
+                </div>
+
+                <div class="form-row">
+                  <label for="notes">Your Message</label>
+                  <textarea id="notes" name="notes" rows="4" placeholder="How can we help?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary full-width">Send Message</button>
+              </form>
+
+              <div class="location-card">
+                <h4>Flagship Address</h4>
+                <p>
+                  4th Floor, Riverside Square<br />Riverside Drive, Westlands<br />Nairobi,
+                  Kenya
+                </p>
+
+                <h4>Front Desk</h4>
+                <p>
+                  Phone: +254 712 345 678<br />
+                  WhatsApp: <a href="https://wa.me/254712345678" target="_blank" rel="noopener noreferrer">+254 712 345 678</a><br />
+                  Email: helpdesk@crownandblade.co.ke
+                </p>
+
+                <h4>Operating Hours</h4>
+                <p>
+                  Tuesday – Friday: 9:00 AM – 8:00 PM<br />
+                  Saturday: 8:30 AM – 7:00 PM<br />
+                  Sunday &amp; Monday: Closed
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pure HTML5 <details> FAQ (No JS Needed) -->
+          <div class="content-block">
+            <div class="section-heading">
+              <h3>Frequently Asked Questions</h3>
+              <p>Quick answers before your visit.</p>
+            </div>
+
+            <div class="faq-list">
+              <details class="faq-item" open>
+                <summary>
+                  Do you accept walk-in clients without an appointment?
+                </summary>
+                <p>
+                  Yes. We reserve daily walk-in slots on a first-come,
+                  first-served basis, though <a href="book.html">booking ahead</a>
+                  guarantees your preferred barber and time.
+                </p>
+              </details>
+
+              <details class="faq-item">
+                <summary>
+                  Should I wash my hair before arriving for my appointment?
+                </summary>
+                <p>
+                  If you use heavy pomades or clays, arriving with clean hair
+                  helps us assess natural fall—however, an invigorating wash is
+                  included with every Sovereign Cut and Executive Package.
+                </p>
+              </details>
+
+              <details class="faq-item">
+                <summary>
+                  Can we book the lounge privately for a wedding or corporate
+                  event?
+                </summary>
+                <p>
+                  Yes. Private half-day and full-lounge buyouts for groomsmen or
+                  executive teams are available Tuesday through Saturday. Choose
+                  "Private Events" in the form above or call our front desk
+                  directly.
+                </p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <!-- Professional Multi-Column Footer -->
+        <footer class="footer">
+          <div class="footer-grid">
+            <!-- Column 1: Brand & Socials -->
+            <div class="footer-col">
+              <div class="footer-brand">
+                <i class="fa-solid fa-scissors"></i>
+                <span>Crown &amp; Blade</span>
+              </div>
+              <p class="footer-desc">
+                A bespoke grooming sanctuary dedicated to precision cuts,
+                classic straight-razor shaves, and unhurried luxury in the heart
+                of Nairobi.
+              </p>
+              <div class="social-links" aria-label="Social Media Links">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://x.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="X (Twitter)"
+                >
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a
+                  href="https://wa.me/254712345678"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp Front"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Column 2: Quick Navigation -->
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul class="footer-links">
+                <li>
+                  <a href="index.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Home Lounge</a
+                  >
+                </li>
+                <li>
+                  <a href="team.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Master Barbers</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Grooming Menu</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Our Heritage</a
+                  >
+                </li>
+                <li>
+                  <a href="reviews.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Client Reviews</a
+                  >
+                </li>
+                <li>
+                  <a href="book.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Book a Chair</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><i class="fa-solid fa-chevron-right"></i> Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 3: Signature Services -->
+            <div class="footer-col">
+              <h4>Popular Rituals</h4>
+              <ul class="footer-links">
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-angle-right"></i> The Sovereign
+                    Cut</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-angle-right"></i> Royal Hot-Towel
+                    Shave</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-angle-right"></i> Beard Sculpt &amp;
+                    Oil</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-angle-right"></i> Crown Executive
+                    Package</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html"
+                    ><i class="fa-solid fa-angle-right"></i> Groom &amp; Bridal
+                    Suite</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 4: Contact & Hours -->
+            <div class="footer-col">
+              <h4>Visit &amp; Contact</h4>
+              <ul class="footer-contact">
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span
+                    >4th Floor, Riverside Square, Riverside Drive, Nairobi</span
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <span>+254 712 345 678</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>helpdesk@crownandblade.co.ke</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-clock"></i>
+                  <span>Tue–Fri: 9 AM – 8 PM &bull; Sat: 8:30 AM – 7 PM</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Bottom Copyright Bar -->
+          <div class="footer-bottom">
+            <p>
+              &copy; 2026 Crown &amp; Blade Barber Lounge. All rights reserved.
+            </p>
+            <p>
+              Built with <i class="fa-solid fa-heart"></i> by
+              <strong>Zindua</strong>
+            </p>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </body>
 </html>

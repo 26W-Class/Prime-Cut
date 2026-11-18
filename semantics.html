@@ -9,6 +9,14 @@
         pick an open time slot and book your haircut at Great Cut in seconds."
     />
     <title>Great Cut | Book Your Next Haircut in Seconds</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- internal CSS -->
+    <!-- <style>
+        body {
+            color:white;
+            background-color: black;
+        }
+    </style> -->
   </head>
   <body>
     <!--header section-->
@@ -23,29 +31,40 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="barbers.html">Barbers</a></li>
           <li><a href="dashboard.html">For Shops</a></li>
-          <li><a href="book.html">Book Now</a></li>
+          <li><a href="contact.html">Book Now</a></li>
         </ul>
       </nav>
     </header>
     <main id="main">
         <!-- Hero section -->
-        <section aria-labelledby="hero-title">
-            <p>Kilimani &middot; Nairobi</p>
-            <h1 id="hero-title">Fresh cuts, booked in <mark>seconds</mark>.</h1>
-            <p>Browse our services and barbers, 
+        <section aria-labelledby="hero-title" class="hero">
+            <p>
+                Kilimani &middot; Nairobi
+            </p>
+            <h1 id="hero-title" class="title">Fresh cuts, booked in <mark class="hero1">seconds</mark>.</h1>
+            <p class="grad">Browse our services and barbers, 
                 pick an open time slot and lock in your appointment. 
                 No calls, no queues.
             </p>
             <p>
-                <button>
-                    <a href="book.html">Book Appointment</a>
+                <button class="btn">
+                    <a href="contact.html">Book Appointment</a>
                 </button>
-                <button>
+                <button class="btn">
                     <a href="services.html">See Prices</a>
                 </button>
             </p>
+            <div class="box"></div>
+            <div class="cont">
+                <div class="radial-grad"> <h2>Radial Gradient</h2></div>
+            </div>
+            <div class="conic"></div>
+            <div class="border-img">
+                <p>This is an image bordered container</p>
+            </div>
         </section>
         <!-- how to section -->
+         <p class="para">This is a paragraph outside the section</p>
         <section aria-labelledby="how-title">
             <h2 id="how-title">How it works</h2>
             <ol>
@@ -106,7 +125,7 @@
                     <li>Skin fades</li>
                     <li>Line-ups</li>
                 </ul>
-                <a href="book.html">Book with Brian</a>
+                <a href="contact.html">Book with Brian</a>
             </article>
             <article id="amina">
                 <h3>Amina Wanjiru</h3>
@@ -115,7 +134,7 @@
                     <li>Kid cuts</li>
                     <li>Patterns</li>
                 </ul>
-                <a href="book.html">Book with Amina</a>
+                <a href="contact.html">Book with Amina</a>
             </article>
          </section>
          <section aria-labelledby="hours-title">
@@ -178,7 +197,7 @@
                 Argwings Kodhek Rd, Kilimani <br />
                 Nairobi, Kenya <br />
                 <a href="tel:+254725439354"> +254 725 439 354</a> <br>
-                <a href="mailto:email@example.com">email Us</a>
+                <a class="email" href="mailto:email@example.com">Email Us</a>
             </address>
         </section>
         <p>

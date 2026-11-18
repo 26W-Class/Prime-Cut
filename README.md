@@ -57,7 +57,7 @@ cd Prime-Cut
 code .
 ```
 3. In VS Code, right-click `index.html` and choose **Open with Live Sever**
-4. **You should see** the Great Cut home  page at `http://127.0.0.1:5000`. Try booking a cut on the `book.html`.
+4. **You should see** the Great Cut home  page at `http://127.0.0.1:5000`. Try booking a cut on the `contact.html`.
 
 ## Collaboration
 
